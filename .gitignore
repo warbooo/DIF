@@ -9,9 +9,7 @@ logs/
 *.db
 data/*.db
 backend/data/*.db
-backend/weights/
 *.safetensors
-*.pth
 *.zip
 .env
 .env.local
