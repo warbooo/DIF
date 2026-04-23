@@ -1,0 +1,51 @@
+# DIF (DocIntelliFix) 项目依赖
+# 后端 Python 依赖
+
+# 核心框架
+fastapi==0.104.1
+uvicorn[standard]==0.24.0.post1
+python-multipart==0.0.6
+
+# 数据库
+sqlalchemy==2.0.23
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# 深度学习
+# 注意：PyTorch 和 torchvision 版本需要根据 CUDA 版本调整
+# 如需 GPU 支持，请使用对应 CUDA 版本的安装命令
+# 例如：pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+torch==2.1.0
+torchvision==0.16.0
+transformers==4.35.2  # 用于 MacBERT 模型
+
+# 图像处理
+opencv-python==4.8.1.78
+Pillow==10.1.0
+numpy==1.24.4
+scikit-image==0.21.0
+scipy==1.11.4
+
+# OCR
+rapidocr-onnxruntime>=1.3.0
+
+# 文本处理
+pycorrector>=0.4.0
+jieba==0.42.1
+
+# 其他工具
+requests==2.31.0
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-magic==0.4.27
+python-dotenv==1.0.0
+
+# 开发工具
+pytest==7.4.3
+black==23.11.0
+flake8==6.1.0
+
+# 注意：
+# 1. 对于 GPU 支持，需要安装对应 CUDA 版本的 PyTorch
+# 2. Swin2SR 模型文件已包含在仓库中
+# 3. MacBERT 模型会在首次使用时自动下载
