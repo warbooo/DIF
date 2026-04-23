@@ -28,3 +28,29 @@ test_*.py
 *.log
 *.pid
 *.pyc
+
+# 不必要的文档
+DATABASE_MANAGEMENT.md
+DATASET_GUIDE.md
+INNOVATIONS.md
+SWIN2SR_INTEGRATION.md
+
+# 测试文件
+*.png
+!backend/weights/*.pth
+
+# 额外的脚本
+deploy*.bat
+check-env.bat
+
+# 根目录的 package-lock.json
+package-lock.json
+
+# Swin2SR 源码中的测试文件（保留必要的即可）
+backend/swin2sr/media/*.png
+backend/swin2sr/media/*.jpg
+backend/swin2sr/media/*.gif
+backend/swin2sr/media/*.pdf
+backend/swin2sr/testsets/**/*.png
+backend/swin2sr/testsets/**/*.jpg
+backend/swin2sr/real-inputs/*.jpg
